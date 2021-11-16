@@ -1,0 +1,218 @@
+﻿body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.register_top_container {
+    background-color: #082b47;
+    /*border-bottom: solid 1px #00000014;*/
+    display: flex;
+    height: 6rem;
+    justify-content: center;
+}
+
+    .register_top_container > div {
+        height: 6rem;
+    }
+
+    .register_top_container #registerHeaderWeather {
+        /*align-self: center;*/
+        color: #ffffff;
+        display: flex;
+        flex-basis: 0;
+        flex-grow: 2;
+        font-size: 1.3rem;
+        line-height: 4rem;
+        padding: 1rem;
+    }
+
+        .register_top_container #registerHeaderWeather #registerWeatherIcon {
+            font-size: 3rem;
+            height: 4rem;
+            margin: 0 1rem;
+            width: 4rem;
+        }
+
+            .register_top_container #registerHeaderWeather #registerWeatherIcon .weatherfont {
+                fill: currentColor;
+                height: 4rem;
+                overflow: hidden;
+                width: 4rem;
+            }
+
+        .register_top_container #registerHeaderWeather #registerWeatherInfo {
+            display: flex;
+            height: 4rem;
+            line-height: 4rem;
+        }
+
+            .register_top_container #registerHeaderWeather #registerWeatherInfo #registerCurrentTemp {
+                font-size: 2rem;
+            }
+
+    .register_top_container .register_title {
+        align-content: center;
+        color: #ffffff;
+        display: flex;
+        flex-basis: 0;
+        flex-direction: column;
+        flex-grow: 1.1;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        justify-content: center;
+        line-height: 2rem;
+        padding: 1rem 0;
+    }
+
+        .register_top_container .register_title .register_logo {
+            background-image: url(../../img/logo.png);
+            background-position: center center;
+            background-repeat: no-repeat no-repeat;
+            background-size: contain;
+            height: 5rem;
+            width: 5rem;
+        }
+
+        .register_top_container .register_title #registerCompany {
+            font-size: 1.25rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+        }
+
+        .register_top_container .register_title #registerSystem {
+            font-size: 2.2rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+    .register_top_container #registerTime {
+        align-self: center;
+        color: #ffffff;
+        flex-basis: 0;
+        flex-grow: 2;
+        font-size: 1.3rem;
+        line-height: 4rem;
+        padding: 1rem;
+        text-align: right;
+    }
+
+    /*.register_top_container #registerMenu {
+        align-items: flex-end;
+        display: flex;
+        flex-basis: 0;
+        flex-grow: 1;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
+
+        .register_top_container #registerMenu a {
+            border: solid 1px #ffffffa0;
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-left: 1rem;
+            padding: 0.1rem 1rem;
+        }*/
+
+.register_main_container {
+    background-color: #e8e7e7;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+
+    .register_main_container .register_container {
+        background: #ffffff;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+    }
+
+
+        .register_main_container .register_container > div:first-child {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            align-items: center;
+            padding: 0rem 5%;
+        }
+
+        .register_main_container .register_container > div:last-child {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 2% 5% 5% 5%;
+        }
+
+            .register_main_container .register_container > div:last-child > div:first-child {
+                display: flex;
+                justify-content: center;
+                font-size: 2rem;
+                padding: 1rem;
+            }
+
+            .register_main_container .register_container > div:last-child > div:last-child {
+                flex: auto;
+                height: 37.5rem;
+                padding: 1.5rem;
+                border-radius: 2rem;
+                background: #f2f2f2;
+                color: #333;
+            }
+
+                .register_main_container .register_container > div:last-child > div:last-child > div {
+                    overflow: hidden !important;
+                }
+
+                    .register_main_container .register_container > div:last-child > div:last-child > div > div {
+                        margin: 0rem 1rem 1rem 1rem;
+                    }
+
+        .register_main_container .register_container .k-button {
+            font-size: 3rem;
+            height: 17rem;
+            width: 17rem;
+        }
+
+            .register_main_container .register_container .k-button#registerEnter {
+                background: #2960d1b8;
+                border-radius: 2rem;
+                color: #ffffff;
+            }
+
+            .register_main_container .register_container .k-button#registerLeave {
+                background: #168006a1;
+                border-radius: 2rem;
+                color: #ffffff;
+            }
+
+
+    .register_main_container .sub_page_container {
+        background: #ffffff;
+        display: none;
+        height: 100%;
+        width: 100%;
+    }
+
+.register_bottom_container {
+    /*background-color: #404040;*/
+    background-color: #082b47;
+    border-top: solid 1px #00000014;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    justify-content: center;
+}
+
+    .register_bottom_container * {
+        /*color: #ffffff;*/
+        font-size: 1.2rem;
+        text-align: center;
+    }

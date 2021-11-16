@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>身份证阅读器USB接入测试页面</title>
+<script>
+function ajax(options) {
+	if(options.type==null)
+	{
+		options.type="POST";
+	}
+	
+	if(options.url==null)
+	{
+		options.url="";
+	}
+	
+	if(options.timeout==null)
+	{
+		options.timeout=5000;
+	}
+	
+	if(options.onComplate==null)
+	{
+		options.onComplate=function() 
+		{
+		}
+	}
+	
+	if(options.onError==null)
+	{
+		options.onError=function() 
+		{
+		}
+	}
+	
+	if(options.onSuccess==null)
+	{
+		options.onSuccess=function() 
+		{
+		}
+	}
+	
+	if(options.data)
+	{
+		options.data="";
+	}
+
+	var xml ;	
+	if (typeof ActiveXObject != 'undefined') {
+	var aVersions = ["Microsoft.XMLHTTP", "Msxml2.XMLHttp.6.0", "Msxml2.XMLHttp.5.0", "Msxml2.XMLHttp.4.0", "Msxml2.XMLHttp.3.0"];
+	for (var i = 0; i < aVersions.length; i++) {
+		try {
+			xml = new ActiveXObject(aVersions[i]);
+			}catch (e) {}
+		}
+	} else if (typeof XMLHttpRequest != 'undefined'){
+		xml = new XMLHttpRequest();
+	}
+
+	xml.open(options.type, options.url, true);
+	
+	var timeoutLength = options.timeout;
+	
+	var requestDone = false;
+	
+	setTimeout(function() {
+				requestDone = true;
+			}, timeoutLength);
+			
+	xml.onreadystatechange = function() {
+	
+		if (xml.readyState == 4 && !requestDone) {
+		
+			if (httpSuccess(xml)) {
+			
+				options.onSuccess(httpData(xml));
+			}
+			
+			else {
+				options.onError();
+			}
+			
+			options.onComplate();
+			
+			xml = null;
+		}
+	};
+
+	xml.send();
+
+	function httpSuccess(r) {
+		try {
+			return !r.status && location.protocol == "file:"
+					||
+					(r.status >= 200 && r.status <= 300)
+					||
+					r.status == 304
+					||
+
+					navigator.userAgent.indexOf("Safari") >= 0
+					&& typeof r.status == "undefined";
+		} catch (e) {
+		}
+		return false;
+	}
+	
+	function httpData(r) {
+		var ct = r.getResponseHeader("responseType");
+		if(ct)
+		{
+			if(ct=="script")
+			{
+				eval.call(window, data);
+			}
+			if(ct=="xml")
+			{
+				return r.responseXML;
+			}
+			if(ct=="json")
+			{
+				return JSON.parse(r.responseText);
+			}
+		}
+		return r.responseText;
+	}
+}
+
+
+function clearForm() {
+    document.getElementById("certType").value = "";
+	document.getElementById("timeElapsed").value = "";
+	document.getElementById("partyName").value = "";
+	document.getElementById("gender").value = "";
+	document.getElementById("nation").value = "";
+	document.getElementById("bornDay").value = "";
+	document.getElementById("certAddress").value = "";
+	document.getElementById("certNumber").value = "";
+	document.getElementById("certOrg").value = "";
+	document.getElementById("effDate").value = "";
+	document.getElementById("expDate").value = "";
+	document.getElementById("result").value = "";
+}
+
+function connect(){
+	function onSuccess(data){
+			document.getElementById("result").value = "提示:" + data.match("\"errorMsg\" : (.*)")[1] + "\n返回值：" + data.match("\"resultFlag\" : (.*)")[1];
+		}
+
+	clearForm();
+	var options=new Object();
+	options.type="GET";
+	//options.url = "/OpenDevice";
+	options.url = "http://127.0.0.1:19196/OpenDevice" + "&" + "t=" + Math.random();		//URL后面加一个随机参数的目的是为了防止IE内核浏览器的数据缓存
+	options.timeout=5000;
+	options.onSuccess=onSuccess;
+	ajax(options);
+}
+function disconnect(){
+	
+	function onSuccess(data){
+			document.getElementById("result").value = "提示:" + data.match("\"errorMsg\" : (.*)")[1] + "\n返回值：" + data.match("\"resultFlag\" : (.*)")[1];
+		}
+		
+	clearForm();
+
+	var options=new Object();
+	options.type="GET";
+	//options.url="CloseDevice";
+	options.url = "http://127.0.0.1:19196/CloseDevice" + "&" + "t=" + Math.random();	//URL后面加一个随机参数的目的是为了防止IE内核浏览器的数据缓存
+	options.timeout=5000;
+	options.onSuccess=onSuccess;
+	ajax(options);
+}
+
+
+function readCert() {
+	function onSuccess(data){
+		var endDt = new Date();
+		document.getElementById("timeElapsed").value = (endDt.getTime() - startDt.getTime()) + "毫秒";
+		var errorMsg = data.match("\"errorMsg\" : (.*)")[1];
+		var resultFlag = data.match("\"resultFlag\" : (.*)")[1];
+		document.getElementById("result").value = "提示:" + errorMsg + "\n返回值：" + resultFlag;
+		
+		var certType = data.match("\"certType\" : \"(.*?)\"")[1];
+		if(certType == " ")
+		{
+			certType = "身份证";
+		}
+		else if(certType == "I")
+		{
+			certType = "外国人居住证";
+		}
+		else if(certType == "J")
+		{
+			certType = "港澳台居住证";
+		}
+		else
+		{
+			certType = "未知";
+		}
+		document.getElementById("certType").value = certType;
+		
+		document.getElementById("partyName").value = data.match("\"partyName\" : \"(.*?)\"")[1];
+		document.getElementById("gender").value = data.match("\"gender\" : \"(.*?)\"")[1];
+		document.getElementById("nation").value = data.match("\"nation\" : \"(.*?)\"")[1];
+		document.getElementById("bornDay").value = data.match("\"bornDay\" : \"(.*?)\"")[1];
+		document.getElementById("certAddress").value = data.match("\"certAddress\" : \"(.*?)\"")[1];
+		document.getElementById("certNumber").value = data.match("\"certNumber\" : \"(.*?)\"")[1];
+		document.getElementById("certOrg").value = data.match("\"certOrg\" : \"(.*?)\"")[1];
+		document.getElementById("effDate").value = data.match("\"effDate\" : \"(.*?)\"")[1];
+		document.getElementById("expDate").value = data.match("\"expDate\" : \"(.*?)\"")[1];
+		document.all['PhotoDisplay'].src = 'data:image/jpeg;base64,' + data.match("\"identityPic\" : \"(.*?)\"")[1]; 
+	}
+	clearForm();
+
+	var startDt = new Date();
+	var options=new Object();
+	options.type="GET";
+	//options.url="readcard";
+	options.url = "http://127.0.0.1:19196/readcard" + "&" + "t=" + Math.random();	//URL后面加一个随机参数的目的是为了防止IE内核浏览器的数据缓存
+	options.timeout=5000;
+	options.onSuccess=onSuccess;
+	ajax(options);
+}
+</script>
+</head>
+<body bgcolor="#D2F0FF"  >
+
+<h1 style="text-align:center;color:#5555FF;">身份证阅读器USB接入测试页面</h1>
+
+<table border="0" width="50%" cellpadding="0" cellspacing="0" style="padding-left:100px;">
+<tr>
+<td><input type="button" value="连接" onclick="connect()"></td>
+<td><input type="button" value="读卡" onclick="readCert()"></td>
+<td><input type="button" value="断开" onclick="disconnect()"></td>
+</tr>
+</table>
+<br/>
+<table border="0" width="100%" cellpadding="0" cellspacing="10">
+<tr>
+<td align="right">读卡时间：</td>
+<td><input type="text" id="timeElapsed" size="49" style="width:400px;" readonly="readonly"></td>
+</tr>
+<tr>
+<td align="right">证件类别：</td>
+<td><input type="text" id="certType" size="49" style="width:400px;" readonly="readonly"></td>
+</tr>
+<tr>
+<td align="right">姓名：</td>
+<td><input type="text" id="partyName" size="49" style="width:400px;" readonly="readonly">(要求中间，两头都没有空格)</td>
+</tr>
+<tr>
+<td align="right">性别：</td>
+<td><input type="text" id="gender" size="49" style="width:400px;" readonly="readonly">(取值为“1”（表示“男”）或“0”（表示“女”）)</td>
+</tr>
+<tr>
+<td align="right">民族：</td>
+<td><input type="text" id="nation" size="49" style="width:400px;" readonly="readonly">(汉字即可)</td>
+</tr>
+<tr>
+<td align="right">出生日期：</td>
+<td><input type="text" id="bornDay" size="49" style="width:400px;" readonly="readonly">(要求格式为:yyyyMMdd，长度为8)</td>
+</tr>
+<tr>
+<td align="right">住址：</td>
+<td><input type="text" id="certAddress" size="49" style="width:400px;" readonly="readonly"></td>
+</tr>
+<tr>
+<td align="right">身份证号：</td>
+<td><input type="text" id="certNumber" size="49" style="color:#FF0000;width:400px;" readonly="readonly">(居民身份号码，长度18位)</td>
+</tr>
+<tr>
+<td align="right">签发机关：</td>
+<td><input type="text" id="certOrg" size="49" style="width:400px;" readonly="readonly"></td>
+</tr>
+<tr>
+<td align="right">开始期限：</td>
+<td><input type="text" id="effDate" size="49" style="width:400px;" readonly="readonly">(要求格式为:yyyyMMdd，长度为8)</td>
+</tr>
+<tr>
+<td align="right">结束期限：</td>
+<td><input type="text" id="expDate" size="49" style="width:400px;" readonly="readonly">(要求格式为:yyyyMMdd，长度为8，或者是“长期”)</td>
+</tr>
+<tr>
+<td align="right">结果：</td>
+<td><textarea id="result" rows="8" cols="47" style="width:400px;" readonly="readonly"></textarea></td>
+</tr>
+<tr>
+<td align=right>照片：</td>
+<td><IMG style="WIDTH: 124px; HEIGHT: 150px" name=PhotoDisplay></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,246 @@
+﻿body {
+}
+
+.enter_container {
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+    .enter_container .enter_main {
+        align-items: stretch;
+        display: flex;
+        flex-grow: 1;
+    }
+
+        .enter_container .enter_main .enter_visit {
+            align-items: flex-start;
+            display: flex;
+            flex-basis: 0.3;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 1rem;
+            width: 30rem;
+        }
+
+            .enter_container .enter_main .enter_visit > .enter_visit_item {
+                display: flex;
+                font-size: 1.2rem;
+                /*height: 3.5rem;*/
+                line-height: 3.5rem;
+                margin: 0.5rem;
+                width: 100%;
+            }
+
+                .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_title {
+                    flex-shrink: 0;
+                    text-align: right;
+                    width: 10rem;
+                }
+
+                .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form {
+                    display: flex;
+                    flex-flow: column;
+                    flex-grow: 1;
+                    justify-content: center;
+                }
+                .enter_container .enter_main .enter_visit > .enter_visit_item:nth-child(3){
+                    margin: 0rem 0.5rem;
+                }
+
+                .enter_container .enter_main .enter_visit > .enter_visit_item:nth-child(4) {
+                    margin: 0rem 0.5rem 0.5rem 0.5rem;
+                }
+
+                    .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form .k-widget {
+                        margin-bottom: 1rem;
+                    }
+
+                .enter_container .enter_main .enter_visit > .enter_visit_item:nth-child(4) > .enter_visit_form .k-widget {
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                        .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form .k-widget:nth-last-child(1) {
+                            margin-bottom: 0;
+                        }
+
+                    .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form > .k-widget.k-textbox,
+                    .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form > .k-widget.k-textarea {
+                        flex-grow: 1;
+                        font-size: 2rem;
+                        line-height: 3.5rem;
+                        width: 100%;
+                    }
+
+                    .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form > .k-widget.k-textarea {
+                        line-height: 2rem;
+                    }
+
+                        .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form > .k-widget.k-textarea textarea {
+                            overflow: auto;
+                            height: 10rem;
+                        }
+
+                            .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form > .k-widget.k-textarea textarea#enterDeviceTools {
+                                height: 10rem;
+                            }
+
+                    .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form > .k-widget.k-checkbox-list {
+                        width: 100%;
+                    }
+
+                    .enter_container .enter_main .enter_visit > .enter_visit_item > .enter_visit_form > .k-widget.k-dropdown {
+                        width: 100%;
+                    }
+
+        .enter_container .enter_main .enter_cert {
+            align-items: flex-start;
+            display: flex;
+            flex-basis: 0.7;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 1rem;
+            width: 70rem;
+        }
+
+            .enter_container .enter_main .enter_cert .enter_cert_reader {
+                align-items: stretch;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                width: 100%;
+            }
+
+                .enter_container .enter_main .enter_cert .enter_cert_reader > div {
+                    display: flex;
+                    font-size: 1.2rem;
+                    line-height: 3.5rem;
+                    margin: 0.5rem;
+                    text-align: right;
+                }
+
+                    .enter_container .enter_main .enter_cert .enter_cert_reader > div:nth-child(1) {
+                        width: calc(45% - 0.5rem * 6);
+                    }
+
+                    .enter_container .enter_main .enter_cert .enter_cert_reader > div:nth-child(2) {
+                        width: calc(25% - 0.5rem * 6);
+                    }
+
+                    .enter_container .enter_main .enter_cert .enter_cert_reader > div:nth-child(3) {
+                        width: calc(20% - 0.5rem * 6);
+                    }
+
+                    .enter_container .enter_main .enter_cert .enter_cert_reader > div:nth-child(4) {
+                        width: 10%;
+                    }
+
+                    .enter_container .enter_main .enter_cert .enter_cert_reader > div > button {
+                        width: 100%;
+                        border-radius: 0.5rem;
+                        background: #409eff;
+                        color: white;
+                        border: 1px solid;
+                        cursor: pointer;
+                    }
+
+                    .enter_container .enter_main .enter_cert .enter_cert_reader > div > button:hover {
+                       opacity: 0.8;
+                    }
+
+                    .enter_container .enter_main .enter_cert .enter_cert_reader > div > .k-widget.k-textbox {
+                        flex-grow: 1;
+                        font-size: 2rem;
+                        line-height: 3.5rem;
+                        width: 8rem;
+                    }
+
+            .enter_container .enter_main .enter_cert .enter_visitor {
+                align-items: stretch;
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
+                width: 100%;
+            }
+
+                .enter_container .enter_main .enter_cert .enter_visitor #enterVistor.k-grid[data-role=grid] {
+                    align-items: stretch;
+                    display: flex !important;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                    .enter_container .enter_main .enter_cert .enter_visitor #enterVistor.k-grid[data-role=grid] > .k-grid-content {
+                        height: 10rem;
+                    }
+
+                        .enter_container .enter_main .enter_cert .enter_visitor #enterVistor.k-grid[data-role=grid] > .k-grid-content tr td .photo_container {
+                            height: 5rem;
+                            /*width: 10rem;*/
+                        }
+
+                            .enter_container .enter_main .enter_cert .enter_visitor #enterVistor.k-grid[data-role=grid] > .k-grid-content tr td .photo_container img {
+                                height: auto;
+                                max-height: 100%;
+                                max-width: 100%;
+                                width: auto;
+                            }
+
+
+    .enter_container .enter_bottom {
+        align-items: center;
+        display: flex;
+        height: 10rem;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+        .enter_container .enter_bottom .k-button {
+            font-size: 1.5rem;
+            height: 6rem;
+            margin: 0 10rem;
+            width: 20rem;
+        }
+
+            .enter_container .enter_bottom .k-button#enterSubmit {
+                background: #2960d1b8;
+                border-radius: 2rem;
+                color: #ffffff;
+            }
+
+            .enter_container .enter_bottom .k-button#enterClear {
+                background: #d13c29a1;
+                border-radius: 2rem;
+                color: #ffffff;
+            }
+
+            .enter_container .enter_bottom .k-button#enterReturn {
+                background: #168006a1;
+                border-radius: 2rem;
+                color: #ffffff;
+            }
+
+#enterVistor .k-dropdown, .k-dropdowntree {
+    width: auto;
+    border-width: 0;
+    outline: 0;
+    background: none;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.4285714286;
+    text-align: left;
+    white-space: nowrap;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: middle;
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}

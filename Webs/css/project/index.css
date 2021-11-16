@@ -1,0 +1,122 @@
+﻿.index_main_container {
+    background: url('../../img/index_bg.jpg') no-repeat center;
+    background-size: cover;
+    height: calc(100% - 11rem);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+    .index_main_container .title {
+        position: relative;
+        text-align: center;
+        top: 5rem;
+    }
+
+        .index_main_container .title span {
+            color: #ffffff;
+            font-size: 5rem;
+            font-weight: 600;
+            letter-spacing: 0.5rem;
+            margin-left: 25rem;
+        }
+
+    .index_main_container .login_container {
+        height: 360px;
+        position: absolute;
+        right: 5rem;
+        top: 15rem;
+        width: 350px;
+    }
+
+        .index_main_container .login_container > div:nth-child(1) {
+            align-items: center;
+            background: #f3f3f3;
+            border-bottom: 1px solid #cfcfcf;
+            border-radius: 3px 3px 0 0;
+            box-shadow: 0 1px whitesmoke;
+            color: #555555;
+            display: flex;
+            font-size: 15px;
+            font-weight: bold;
+            height: 40px;
+            line-height: 40px;
+            padding: 1px;
+            padding-left: 10px;
+            text-align: left;
+            text-shadow: 0 1px white;
+            -webkit-box-shadow: 0 1px whitesmoke;
+        }
+
+        .index_main_container .login_container > div:nth-child(2) {
+            align-items: center;
+            /*background-color: #008ce6;*/
+            background-color: rgba(126, 126, 126, 0.88);
+            border-radius: 0 0 3px 3px;
+            display: flex;
+            height: 320px;
+            justify-content: center;
+        }
+
+            .index_main_container .login_container > div:nth-child(2) #divDingLogin {
+                height: 291px;
+                width: 300px;
+            }
+
+.index_bottom_container {
+    background-color: #ededed;
+    border-top: #fff 1rem solid;
+    bottom: 0;
+    clear: both;
+    height: 11rem;
+    position: absolute;
+    width: 100%;
+}
+
+    .index_bottom_container .company p {
+        color: #7e7e7e;
+        font-size: 1.2rem;
+        height: 2rem;
+        line-height: 2rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .index_bottom_container .ensure {
+        align-items: center;
+        display: flex;
+        height: 6rem;
+        justify-content: center;
+    }
+
+        .index_bottom_container .ensure .e_list {
+            background: url(../../img/index_ensure_bg.png) no-repeat;
+            display: flex;
+            flex-direction: column;
+            float: left;
+            height: 50px;
+            justify-content: center;
+            width: calc(50px + 15rem);
+        }
+
+            .index_bottom_container .ensure .e_list:nth-of-type(1) {
+                background-position: 0 0;
+            }
+
+            .index_bottom_container .ensure .e_list:nth-of-type(2) {
+                background-position: 0 -84px;
+            }
+
+            .index_bottom_container .ensure .e_list:nth-of-type(3) {
+                background-position: 0 -167px;
+            }
+
+            .index_bottom_container .ensure .e_list:nth-of-type(4) {
+                background-position: 0 -248px;
+            }
+
+            .index_bottom_container .ensure .e_list span {
+                color: #7e7e7e;
+                font-size: 1.2rem;
+                padding-left: 60px;
+            }

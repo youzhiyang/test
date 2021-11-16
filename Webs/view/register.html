@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>访客登记系统 - 桂林华为云计算数据中心</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png">
+    <link href="../css/kendo/kendo.jkkg.css" rel="stylesheet" />
+    <link href="../css/project/pmfont.css" rel="stylesheet" />
+    <link href="../css/project/weatherfont.css" rel="stylesheet" />
+    <link href="../css/project/common.css" rel="stylesheet" />
+    <link href="../css/project/register.css" rel="stylesheet" />
+    <script src="https://g.alicdn.com/code/npm/@ali/dingtalk-h5-remote-debug-sdk/0.1.1/app.bundle.js"></script>
+</head>
+<body>
+    <div class="register_top_container">
+        <div id="registerHeaderWeather">
+            <div id="registerCity">桂林</div>
+            <div id="registerWeatherIcon">
+                <svg class="weatherfont" aria-hidden="true">
+                    <use xlink:href=""></use>
+                </svg>
+            </div>
+            <div id="registerWeatherInfo">
+                <div id="registerCurrentTemp"></div>
+                <div id="registerWeatherDetail"></div>
+            </div>
+        </div>
+        <div class="register_title">
+            <div class="register_logo"></div>
+            <div id="registerCompany">桂林华为云计算数据中心</div>
+            <div id="registerSystem">访客登记系统</div>
+        </div>
+        <div id="registerTime"></div>
+        <!--<div id="registerMenu">
+            <a id="registerReturn" class="k-link" href="#">返回</a>
+        </div>-->
+    </div>
+    <div class="register_main_container">
+        <!--<div id="registerTabStrip"></div>-->
+        <div class="register_container">
+            <div>
+                <div id="registerEnter">入场登记</div>
+                <div id="registerLeave">离场登记</div>
+            </div>
+            <div>
+                <div>近期访客统计</div>
+                <div id="registerListView"></div>
+            </div>
+        </div>
+        <div id="registerEnterContainer" class="sub_page_container"></div>
+        <div id="registerLeaveContainer" class="sub_page_container"></div>
+    </div>
+    <div class="register_bottom_container">
+        <div></div>
+        <div>桂林华为云计算数据中心</div>
+    </div>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/kendo/kendo.all.min.js"></script>
+    <script src="../js/kendo/cultures/kendo.culture.zh-CN.js"></script>
+    <script src="../js/kendo/messages/kendo.messages.zh-CN.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../controller/pmfont.js"></script>
+    <script src="../controller/weatherfont.js"></script>
+    <script src="../controller/common.js"></script>
+    <script src="../controller/system.js"></script>
+    <script src="../controller/register.js"></script>
+    <script>
+    </script>
+</body>
+</html>

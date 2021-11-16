@@ -1,0 +1,128 @@
+
+@font-face {
+    font-family: "weatherfont";
+    src: url("../../fonts/weather/iconfont.eot?t=1517816105956"); /* IE9*/
+    src: url("../../fonts/weather/iconfont.eot?t=1517816105956#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../../fonts/weather/iconfont.ttf?t=1517816105956") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url("../../fonts/weather/iconfont.svg?t=1517816105956#weatherfont") format("svg"); /* iOS 4.1- */
+}
+
+.weatherfont {
+    font-family: "weatherfont" !important;
+    font-size: 1rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*Çç*/
+
+.weather-qing:before {
+    content: "\e635";
+}
+
+.weather-duoyun:before {
+    content: "\e639";
+}
+
+.weather-yin:before {
+    content: "\e62c";
+}
+
+/*Óê*/
+
+.weather-zhenyu:before {
+    content: "\e643";
+}
+
+.weather-xiaoyu:before {
+    content: "\e62e";
+}
+
+.weather-zhongyu:before {
+    content: "\e62f";
+}
+
+.weather-dayu:before {
+    content: "\e62d";
+}
+
+.weather-baoyu:before {
+    content: "\e642";
+}
+
+.weather-leizhenyu:before {
+    content: "\e63b";
+}
+
+.weather-yujiaxue:before {
+    content: "\e64e";
+}
+
+/*Ñ©*/
+
+/*.weather-xiaoxue:before {
+    content: "\e63f";
+}
+
+.weather-daxue:before {
+    content: "\e63e";
+}*/
+
+.weather-xiaoxue:before {
+    content: "\e637";
+}
+
+.weather-zhongxue:before {
+    content: "\e638";
+}
+
+.weather-daxue:before {
+    content: "\e63a";
+}
+
+.weather-baoxue:before {
+    content: "\e63c";
+}
+
+.weather-bingbao:before {
+    content: "\e636";
+}
+
+/*Îíö²*/
+
+.weather-wu:before {
+    content: "\e652";
+}
+
+.weather-wumai:before {
+    content: "\e651";
+}
+
+/*³¾*/
+
+.weather-fuchen:before {
+    content: "\e650";
+}
+
+.weather-shachenbao:before {
+    content: "\e64f";
+}
+
+/*ÆäËû*/
+
+.weather-feng:before {
+    content: "\e655";
+}
+
+.weather-dafeng:before {
+    content: "\e656";
+}
+
+.weather-taifeng:before {
+    content: "\e653";
+}
+
+.weather-longjuanfeng:before {
+    content: "\e654";
+}

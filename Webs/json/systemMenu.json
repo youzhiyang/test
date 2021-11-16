@@ -1,0 +1,88 @@
+﻿[
+  {
+    "cssClass": "",
+    "text": "",
+    "url": "",
+    "items": [
+      {
+        "attr": {
+          "url": "data/dictionary.html"
+        },
+        "cssClass": "link",
+        "id": "4475c37f-01c8-4df1-b4fe-02a8b90d6e3f",
+        "text": "数据字典",
+        "url": ""
+      },
+      {
+        "attr": {
+          "url": "systemdata/action.html"
+        },
+        "cssClass": "link",
+        "id": "baca1af5-ec74-4f73-a997-359c6a512924",
+        "text": "Action管理",
+        "url": ""
+      },
+      {
+        "attr": {
+          "url": "systemdata/page.html"
+        },
+        "cssClass": "link",
+        "id": "8f514eab-e34a-40d2-a752-780260d82aa5",
+        "text": "页面管理",
+        "url": ""
+      },
+      {
+        "attr": {
+          "url": "systemdata/element.html"
+        },
+        "cssClass": "link",
+        "id": "1773da2c-3785-47e0-8a87-fb644bd744fd",
+        "text": "页面控件管理",
+        "url": ""
+      },
+      {
+        "cssClass": "",
+        "text": "权限管理",
+        "url": "",
+        "items": [
+          {
+            "attr": {
+              "url": "authority/role.html"
+            },
+            "cssClass": "link",
+            "id": "0b6ac646-3dab-44fa-be36-ba8cc3cb0dbb",
+            "text": "角色设置",
+            "url": ""
+          },
+          {
+            "attr": {
+              "url": "authority/roleAction.html"
+            },
+            "cssClass": "link",
+            "id": "695b7c7c-dffc-43fe-ab41-b41a06bfbc37",
+            "text": "角色Action权限",
+            "url": ""
+          },
+          {
+            "attr": {
+              "url": "authority/rolePage.html"
+            },
+            "cssClass": "link",
+            "id": "60bbfcd6-0f28-47d5-9f5b-73a5732f06ae",
+            "text": "角色页面权限",
+            "url": ""
+          },
+          {
+            "attr": {
+              "url": "authority/roleElement.html"
+            },
+            "cssClass": "link",
+            "id": "50bcc9e3-0c9b-409f-989d-13fd046032b6",
+            "text": "角色页面控件权限",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  }
+]

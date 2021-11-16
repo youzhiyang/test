@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <!--<link href="../css/kendo/kendo.jkkg.css" rel="stylesheet" />
+    <link href="../css/project/pmfont.css" rel="stylesheet" />
+    <link href="../css/project/common.css" rel="stylesheet" />-->
+    <link href="../css/project/business/enter.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="dialogMask" class="k-loading-mask" hidden>
+        <span class="k-loading-text">载入中...</span>
+        <div class="k-loading-image"></div>
+        <div class="k-loading-color"></div>
+    </div>
+    <div class="enter_container">
+        <div class="enter_main">
+            <div class="enter_visit">
+                <div class="enter_visit_item" style="display: none;">
+                    <div class="enter_visit_title">授权码：</div>
+                    <div class="enter_visit_form">
+                        <input id="enterAuthCode" class="enter_visit_record" maxlength="10" />
+                    </div>
+                </div>
+                <div class="enter_visit_item">
+                    <div class="enter_visit_title">来访事由：</div>
+                    <div class="enter_visit_form">
+                        <div id="enterReasonCode"></div>
+                        <textarea id="enterReason" class="enter_visit_record" maxlength="100"></textarea>
+                    </div>
+                </div>
+                <div class="enter_visit_item">
+                    <div class="enter_visit_title">访问区域：</div>
+                    <div class="enter_visit_form">
+                        <div id="enterArea"></div>
+                    </div>
+                </div>
+                <div class="enter_visit_item">
+                    <div class="enter_visit_title">携带设备与工具：</div>
+                    <div class="enter_visit_form">
+                        <div id="enterDeviceToolsSelect"></div>
+                        <textarea id="enterDeviceTools" class="enter_visit_record" maxlength="100"></textarea>
+                    </div>
+                </div>
+                <div class="enter_visit_item">
+                    <div class="enter_visit_title">来访者单位：</div>
+                    <div class="enter_visit_form">
+                        <input id="enterVisitOrgization" class="enter_visit_orgization" maxlength="50" placeholder="统一填写来访者单位" />
+                    </div>
+                </div>
+                <div class="enter_visit_item">
+                    <div class="enter_visit_title">引导人：</div>
+                    <div class="enter_visit_form">
+                        <div id="enterGuidePerson"></div>
+                    </div>
+                </div>
+                <!--<div>
+                    <div>登记时间：</div>
+                    <div id="enterenterTime"></div>
+                </div>-->
+            </div>
+            <div class="enter_cert">
+                <div class="enter_cert_reader">
+                    <div>
+                        <div>证件号码：</div>
+                        <input id="enterCertCertID" class="enter_cert_info_certID" />
+                    </div>
+                    <div>
+                        <div>姓名：</div>
+                        <input id="enterCertName" class="enter_cert_info_name" />
+                    </div>
+                    <div>
+                        <div>性别：</div>
+                        <input id="enterCertGender" class="enter_cert_info_gender" />
+                    </div>
+                    <div>
+                        <button id="enterAdd" type="button">新增</button>
+                    </div>
+                    <!--<div>
+                        <div>民族：</div>
+                        <input id="enterCertNation" class="enter_cert_info_nation" />
+                    </div>
+                    <div>
+                        <div>出生日期：</div>
+                        <input id="enterCertBornDay" class="enter_cert_info_bornDay" />
+                    </div>
+                    <div>
+                        <div>证件地址：</div>
+                        <input id="enterCertCertAddress" class="enter_cert_info_certAddress" />
+                    </div>
+                    <div>
+                        <div>发证机关：</div>
+                        <input id="enterCertCertOrg" class="enter_cert_info_certOrg" />
+                    </div>
+                    <div>
+                        <div>有效期：</div>
+                        <input id="enterCertEffDate" class="enter_cert_info_effDate" />
+                        <div>至</div>
+                        <input id="enterCertExpDate" class="enter_cert_info_expDate" />
+                    </div>-->
+                </div>
+                <div class="enter_visitor">
+                    <div id="enterVistor"></div>
+                </div>
+            </div>
+        </div>
+        <div class="enter_bottom">
+            <div id="enterSubmit" class="k-primary">提交</div>
+            <div id="enterClear">清空</div>
+            <div id="enterReturn">返回</div>
+        </div>
+    </div>
+    <!-- 模板 -->
+    <div id="enterCertTemplate" class="template">
+        <div class="enter_cert_info">
+            <div>
+                <div>证件号码：</div>
+                <div class="enter_cert_info_cerID"></div>
+            </div>
+            <div>
+                <div>姓名：</div>
+                <div class="enter_cert_info_name"></div>
+            </div>
+            <div>
+                <div>性别：</div>
+                <div class="enter_cert_info_gender"></div>
+            </div>
+            <div>
+                <div>民族：</div>
+                <div class="enter_cert_info_nation"></div>
+            </div>
+            <div>
+                <div>出生日期：</div>
+                <div class="enter_cert_info_bornDay"></div>
+            </div>
+            <div>
+                <div>证件地址：</div>
+                <div class="enter_cert_info_certAddress"></div>
+            </div>
+            <div>
+                <div>发证机关：</div>
+                <div class="enter_cert_info_certOrg"></div>
+            </div>
+            <div class="">
+                <div>有效期：</div>
+                <div class="enter_cert_info_effDate"></div>
+                <div>至</div>
+                <div class="enter_cert_info_expDate"></div>
+            </div>
+        </div>
+    </div>
+    <!--<script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/kendo/kendo.all.min.js"></script>
+    <script src="../js/kendo/cultures/kendo.culture.zh-CN.js"></script>
+    <script src="../js/kendo/messages/kendo.messages.zh-CN.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../controller/system.js"></script>-->
+    <script src="../controller/common.js"></script>
+    <script src="../controller/business/enter.js"></script>
+    <script>
+    </script>
+</body>
+</html>

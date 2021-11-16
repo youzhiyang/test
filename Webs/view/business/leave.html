@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <!--<link href="../css/kendo/kendo.jkkg.css" rel="stylesheet" />
+    <link href="../css/project/pmfont.css" rel="stylesheet" />
+    <link href="../css/project/common.css" rel="stylesheet" />-->
+    <link href="../css/project/business/leave.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="dialogMask" class="k-loading-mask" hidden>
+        <span class="k-loading-text">载入中...</span>
+        <div class="k-loading-image"></div>
+        <div class="k-loading-color"></div>
+    </div>
+    <div class="leave_container">
+        <div class="leave_main">
+            <div class="leave_cert_reader">
+                <div>
+                    <div>
+                        <div>引导人：</div>
+                        <div>
+                            <div id="leaveGuidePerson"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>证件号码：</div>
+                        <input id="leaveCertCertID" class="leave_cert_info_certID" />
+                    </div>
+                    <div>
+                        <div>姓名：</div>
+                        <input id="leaveCertName" class="leave_cert_info_name" />
+                    </div>
+                    <div>
+                        <div>性别：</div>
+                        <input id="leaveCertGender" class="leave_cert_info_gender" />
+                    </div>
+                    <div>
+                        <button id="leaveAdd" type="button">新增</button>
+                    </div>
+                </div>
+            </div>
+            <div class="leave_visitor">
+                <div id="leaveVistor"></div>
+            </div>
+        </div>
+        <div class="leave_bottom">
+            <div>
+                <div id="leaveSubmit">提交</div>
+                <div id="leaveClear">清空</div>
+                <div id="leaveReturn">返回</div>
+            </div>
+        </div>
+    </div>
+    <!--<script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/kendo/kendo.all.min.js"></script>
+    <script src="../js/kendo/cultures/kendo.culture.zh-CN.js"></script>
+    <script src="../js/kendo/messages/kendo.messages.zh-CN.js"></script>
+    <script src="../js/layer/layer.js"></script>
+    <script src="../controller/common.js"></script>
+    <script src="../controller/system.js"></script>-->
+    <script src="../controller/business/leave.js"></script>
+    <script>
+    </script>
+</body>
+</html>

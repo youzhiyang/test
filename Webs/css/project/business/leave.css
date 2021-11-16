@@ -1,0 +1,146 @@
+﻿body {
+}
+
+.leave_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.leave_bottom {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.leave_bottom > div {
+    width: 96rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .leave_bottom > div > div {
+        height: 6rem;
+        width: 20rem;
+        color: white;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+    }
+
+.leave_bottom > div > div:hover {
+    color: white;
+}
+
+.leave_bottom > div > div:first-child {
+    background: #2960d1b8;
+}
+
+.leave_bottom > div > div:nth-last-child(2) {
+    background: #d13c29a1;
+}
+
+.leave_bottom > div > div:last-child {
+    background: #168006a1;
+}
+
+.leave_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 5;
+}
+
+.leave_cert_reader {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex: 1;
+}
+
+.leave_cert_reader > div {
+    width: 96rem;
+    display: flex;
+    align-items: center;
+}
+
+.leave_cert_reader > div > div {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    display: flex;
+}
+.leave_cert_reader > div > div:first-child {
+    margin-left: 0px;
+}
+.leave_cert_reader > div > div:nth-child(2) {
+    flex: 4;
+}
+
+.leave_cert_reader > div > div:nth-child(3) {
+    flex: 2;
+}
+.leave_cert_reader > div > div:nth-child(4) {
+    flex: 2;
+}
+
+    .leave_cert_reader > div > div:last-child {
+        flex: 1;
+        font-size: 1.2rem;
+        line-height: 3.5rem;
+        height:3.5rem
+    }
+
+    .leave_cert_reader > div > div:last-child > button {
+        border-radius: 0.5rem;
+        background: #409eff;
+        color: white;
+        border: 1px solid;
+        cursor: pointer;
+        width:100%;
+    }
+
+        .leave_cert_reader > div > div:last-child > button:hover {
+            opacity: 0.8;
+        }
+
+.leave_cert_reader > div > div > div {
+    display: inline-block;
+    line-height: 3.5rem;
+}
+
+.leave_cert_reader > div > div > span {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    width: 10rem;
+    flex:1;
+}
+.leave_visitor {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 5;
+    justify-content: center;
+}
+
+    .leave_visitor > div {
+        width: 96rem;
+        height: 100%;
+        display: flex !important;
+        align-items: stretch;
+    }
+
+        .leave_visitor > div > div:last-child {
+            height: 10rem;
+        }
+.photo_container {
+    height: 5rem;
+}
+    .photo_container > img {
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+    }
+
+    

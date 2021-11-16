@@ -1,0 +1,95 @@
+﻿[
+  {
+    "cssClass": "",
+    "text": "基础资料",
+    "url": "",
+    "items": [
+      {
+        "attr": {
+          "url": "data/organization.html"
+        },
+        "cssClass": "link back_green",
+        "description": "1.浏览公司组织架构<br />2.与钉钉同步公司组织架构<br />3.为员工分配系统权限",
+        "icon": "pm-zuzhijiagou",
+        "id": "8045779a-f21e-4a5e-a5a7-cafc9ab29555",
+        "order": 1,
+        "text": "组织架构",
+        "url": ""
+      },
+      {
+        "attr": {
+          "url": "data/stakeholder.html"
+        },
+        "cssClass": "link back_green",
+        "description": "1.维护与项目有关的公司外部人员信息",
+        "icon": "pm-renyuan-lan",
+        "id": "3bc55c93-bb0b-4c36-a892-5d5a35f3ebdb",
+        "order": 2,
+        "text": "干系人",
+        "url": ""
+      },
+      {
+        "attr": {
+          "url": "data/projectTemplate.html"
+        },
+        "cssClass": "link back_orange",
+        "description": "1.维护用于快速生成项目节点的模板",
+        "icon": "pm-mobandingyi",
+        "id": "eab2b3f5-f82f-40df-8b51-aa02ad8bdd35",
+        "order": 4,
+        "text": "项目模板",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "cssClass": "",
+    "text": "项目资料",
+    "url": "",
+    "items": [
+      {
+        "attr": {
+          "url": "business/project.html"
+        },
+        "cssClass": "link back_blue",
+        "description": "1.维护项目及项目节点数据<br />2.维护项目预算与支出数据<br />3.浏览项目甘特图<br />4.设置项目在地图上的区域范围<br />5.维护项目问题，查看干系人回复信息。<br />6.维护项目文档库",
+        "icon": "pm-shigong",
+        "id": "19cc937c-ebc7-4436-9f68-a7ab80380302",
+        "order": 3,
+        "text": "项目管理",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "cssClass": "",
+    "text": "报表/看板",
+    "url": "",
+    "items": [
+      {
+        "attr": {
+          "url": "report/platform.html"
+        },
+        "cssClass": "window back_purple",
+        "description": "1.查看项目数据实时看板",
+        "icon": "pm-kanban",
+        "id": "7c2b445b-5a62-4eac-921d-f407bc7e4c03",
+        "order": 5,
+        "text": "决策看板（实时数据）",
+        "url": ""
+      },
+      {
+        "attr": {
+          "url": "report/jkqgwh/report.html"
+        },
+        "cssClass": "link back_red",
+        "description": "1.生成经营分析报告",
+        "icon": "pm-baobiaofenxi",
+        "id": "7c2b445b-5a62-4eac-921d-f407bc7e4c03",
+        "order": 6,
+        "text": "经营分析报告",
+        "url": ""
+      }
+    ]
+  }
+]

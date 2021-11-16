@@ -1,0 +1,15 @@
+﻿body {
+}
+
+#actionData.k-grid[data-role=grid] .k-grid-content td .switch_state {
+    color: #888888 !important;
+    font-size: 1.5rem;
+}
+
+    #actionData.k-grid[data-role=grid] .k-grid-content td .switch_state.authorized {
+        cursor: pointer;
+    }
+
+    #actionData.k-grid[data-role=grid] .k-grid-content td .switch_state.disabled {
+        color: #ff0000 !important;
+    }

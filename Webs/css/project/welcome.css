@@ -1,0 +1,79 @@
+﻿body {
+}
+
+.welcome_menu_container {
+    align-content: stretch;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+    .welcome_menu_container .welcome_menu_grid {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+        .welcome_menu_container .welcome_menu_grid:nth-of-type(1),
+        .welcome_menu_container .welcome_menu_grid:nth-of-type(2) {
+            width: calc(25% - 2rem);
+        }
+
+        .welcome_menu_container .welcome_menu_grid:nth-of-type(3) {
+            width: calc(50% - 2rem);
+        }
+
+        .welcome_menu_container .welcome_menu_grid:nth-of-type(4) {
+            width: calc(34% - 2rem);
+        }
+
+        .welcome_menu_container .welcome_menu_grid:nth-of-type(5),
+        .welcome_menu_container .welcome_menu_grid:nth-of-type(6) {
+            width: calc(33% - 2rem);
+        }
+
+        .welcome_menu_container .welcome_menu_grid.authorized {
+            cursor: pointer;
+        }
+
+        /*.welcome_menu_container .welcome_menu_grid.small {
+            width: 10rem;
+        }
+
+        .welcome_menu_container .welcome_menu_grid.medium {
+            width: 17rem;
+        }
+
+        .welcome_menu_container .welcome_menu_grid.large {
+            width: 22rem;
+        }*/
+
+        .welcome_menu_container .welcome_menu_grid .welcome_menu_grid_icon {
+            align-self: flex-start;
+            color: #ffffff;
+            font-size: 4rem;
+            height: 5rem;
+            line-height: 5rem;
+            width: 5rem;
+        }
+
+        .welcome_menu_container .welcome_menu_grid .welcome_menu_grid_title {
+            color: #ffffff;
+            font-size: 2rem;
+            height: 5rem;
+            line-height: 5rem;
+            text-align: center;
+            margin: -5rem 0 0.5rem;
+            width: 100%;
+        }
+
+        .welcome_menu_container .welcome_menu_grid .welcome_menu_grid_description {
+            color: #ffffff;
+            font-size: 1.3rem;
+            height: 11rem;
+            width: 100%;
+        }

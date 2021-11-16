@@ -1,0 +1,1390 @@
+﻿* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 系统状态/级别等颜色 */
+
+.back_white {
+    background-color: #ffffff;
+}
+
+.back_black {
+    background-color: #333333;
+}
+
+.back_blue {
+    background-color: #21abab;
+}
+
+.back_gray {
+    background-color: #808080;
+}
+
+.back_green {
+    background-color: #6aa529;
+}
+
+.back_orange {
+    background-color: #d18c0e;
+}
+
+.back_red {
+    background-color: #ff5555;
+}
+
+.back_purple {
+    background-color: #9e408d;
+}
+
+.border_white {
+    border-color: #ffffff;
+}
+
+.border_black {
+    border-color: #333333;
+}
+
+.border_blue {
+    border-color: #21abab;
+}
+
+.border_gray {
+    border-color: #808080;
+}
+
+.border_green {
+    border-color: #6aa529;
+}
+
+.border_orange {
+    border-color: #d18c0e;
+}
+
+.border_red {
+    border-color: #ff5555;
+}
+
+.border_purple {
+    border-color: #9e408d;
+}
+
+.border_left_white {
+    border-left-color: #ffffff;
+}
+
+.border_left_blue {
+    border-left-color: #21abab;
+}
+
+.border_left_gray {
+    border-left-color: #808080;
+}
+
+.border_left_green {
+    border-left-color: #6aa529;
+}
+
+.border_left_orange {
+    border-left-color: #d18c0e;
+}
+
+.border_left_red {
+    border-left-color: #ff5555;
+}
+
+.border_left_purple {
+    border-left-color: #9e408d;
+}
+
+.color_white {
+    color: #ffffff;
+}
+
+.color_black {
+    color: #333333;
+}
+
+.color_blue {
+    color: #21abab;
+}
+
+.color_gray {
+    color: #808080;
+}
+
+.color_green {
+    color: #6aa529;
+}
+
+.color_orange {
+    color: #ffa400;
+}
+
+.color_red {
+    color: #ff5555;
+}
+
+.color_purple {
+    color: #9e408d;
+}
+
+/* LayerUI弹窗内容颜色 */
+.layui-layer-content {
+    color: #333333;
+}
+
+/* 可操作控件 */
+.operator {
+}
+
+    /* 未授权 */
+    .operator.unauthorized {
+        display: none !important;
+    }
+
+/* 容器显示行数 */
+
+.row1 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.row2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.row3 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+/* 模板 */
+.template {
+    display: none;
+}
+
+.width1 {
+    width: 1rem;
+}
+
+.width2 {
+    width: 2rem;
+}
+
+.width3 {
+    width: 3rem;
+}
+
+.width4 {
+    width: 4rem;
+}
+
+.width5 {
+    width: 5rem;
+}
+
+.width6 {
+    width: 6rem;
+}
+
+.width7 {
+    width: 7rem;
+}
+
+.width8 {
+    width: 8rem;
+}
+
+.width9 {
+    width: 9rem;
+}
+
+.width10 {
+    width: 10rem;
+}
+
+/* KendoUI控件 */
+
+/* input */
+.k-edit-form-container .k-input.k-textbox {
+    border-color: rgba(0,0,0,0.08);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* splitter */
+.k-splitter[data-role=splitter] {
+    flex-grow: 1;
+}
+
+    .k-splitter[data-role=splitter] .pane_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+/* tabstrip */
+.k-tabstrip[data-role=tabstrip] {
+    font-size: 1.2rem;
+}
+
+    .k-tabstrip[data-role=tabstrip] > .k-tabstrip-items {
+    }
+
+        .k-tabstrip[data-role=tabstrip] > .k-tabstrip-items > .k-item {
+        }
+
+            .k-tabstrip[data-role=tabstrip] > .k-tabstrip-items > .k-item > .k-link {
+                font-size: 1.2rem;
+                height: 2.5rem;
+                line-height: 1.5rem;
+                padding: 0.5rem 1rem;
+            }
+
+                .k-tabstrip[data-role=tabstrip] > .k-tabstrip-items > .k-item > .k-link > .pmfont {
+                    font-size: 1.2rem;
+                    height: 1.5rem;
+                    line-height: 1.5rem;
+                    padding-left: 0.5rem;
+                }
+
+    .k-tabstrip[data-role=tabstrip] > .k-content {
+        border-color: #00000014;
+        padding: 0.35rem 0.65rem;
+    }
+
+        .k-tabstrip[data-role=tabstrip] > .k-content.k-state-active {
+            display: flex !important;
+            flex-direction: column;
+        }
+
+/* toolbar */
+.k-toolbar[data-role=toolbar] > * {
+    margin: 0 0.35rem;
+}
+
+.k-toolbar[data-role=toolbar],
+.k-grid-toolbar {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    height: 4rem;
+    line-height: 2.7rem;
+    padding: 0.65rem 0.35rem;
+}
+
+    .k-toolbar[data-role=toolbar] .k-button,
+    .k-grid-toolbar .k-button {
+        font-size: 1.2rem;
+        height: 2.7rem;
+        line-height: calc(1.4rem - 2px);
+        margin: 0 0.35rem;
+        padding: 0.65rem 0.35rem;
+    }
+
+        .k-toolbar[data-role=toolbar] .k-button .pmfont,
+        .k-grid-toolbar .k-button .pmfont {
+            font-size: 1.2rem;
+        }
+
+        .k-toolbar[data-role=toolbar] .k-button.k-overflow-anchor,
+        .k-grid-toolbar .k-button.k-overflow-anchor {
+            height: 4rem;
+        }
+
+    .k-toolbar[data-role=toolbar] input {
+        font-size: 1.3rem;
+        height: 2.7rem;
+        line-height: 2.7rem;
+        padding: 0 0.2rem;
+    }
+
+    .k-toolbar[data-role=toolbar] .k-separator {
+        margin: 0 0.35rem;
+    }
+
+    .k-toolbar[data-role=toolbar] .toolbar_placeholder {
+        flex-grow: 1;
+    }
+
+    .k-toolbar[data-role=toolbar] .k-dropdown {
+        height: 2.7rem;
+        line-height: 2.7rem;
+    }
+
+        .k-toolbar[data-role=toolbar] .k-dropdown > .k-dropdown-wrap {
+            height: 2.7rem;
+            line-height: 2.7rem;
+            width: 100%;
+        }
+
+            .k-toolbar[data-role=toolbar] .k-dropdown > .k-dropdown-wrap > .k-input {
+                height: calc(2.7rem - 2px);
+                line-height: calc(2rem - 2px);
+                padding: 0.35rem 0.65rem;
+                width: calc(100% - 2.5rem - 2px) !important;
+            }
+
+            .k-toolbar[data-role=toolbar] .k-dropdown > .k-dropdown-wrap > .k-select {
+                height: calc(2.7rem - 2px);
+                width: 2.5rem;
+            }
+
+                .k-toolbar[data-role=toolbar] .k-dropdown > .k-dropdown-wrap > .k-select .k-link {
+                    flex-grow: 1;
+                    height: auto;
+                }
+
+/* grid/treelist */
+.k-grid[data-role=grid],
+.k-grid[data-role=treelist] {
+    font-size: 1.2rem;
+}
+
+    .k-grid[data-role=grid] > .k-grid-header,
+    .k-grid[data-role=treelist] > .k-grid-header {
+        height: calc(3rem + 1px);
+    }
+
+        .k-grid[data-role=grid] > .k-grid-header > .k-grid-header-wrap > .k-resize-handle,
+        .k-grid[data-role=treelist] > .k-grid-header > .k-grid-header-wrap > .k-resize-handle {
+            background-color: transparent;
+        }
+
+        .k-grid[data-role=grid] > .k-grid-header > .k-grid-header-wrap table[role=grid] th,
+        .k-grid[data-role=treelist] > .k-grid-header > .k-grid-header-wrap table[role=grid] th {
+            font-size: 1.2rem;
+            height: 3rem;
+            line-height: 2rem;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+    .k-grid[data-role=grid] > .k-grid-content,
+    .k-grid[data-role=treelist] > .k-grid-content {
+    }
+
+        .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr,
+        .k-grid[data-role=treelist] > .k-grid-content table[role=grid] tr {
+        }
+
+            .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td,
+            .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td {
+                font-size: 1.2rem;
+                height: 3.5rem;
+                line-height: 1.7rem;
+                padding: 0.9rem;
+            }
+
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td > .row1,
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td > .row2,
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td > .row3,
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td > .row1,
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td > .row2,
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td > .row3 {
+                    height: auto;
+                }
+
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td > .k-dirty,
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td > .k-dirty {
+                    color: #d10000;
+                }
+
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td > .k-button[role=button],
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td > .k-button[type=button] {
+                    width: 5.5rem;
+                }
+
+                    .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td > .k-button[role=button]:before,
+                    .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td > .k-button[role=button]:after,
+                    .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td > .k-button[type=button]:before,
+                    .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td > .k-button[type=button]:after {
+                        background: transparent;
+                        display: inline-flex;
+                        opacity: 1;
+                        position: relative;
+                    }
+
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td.center_column,
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td.center_column {
+                    text-align: center;
+                }
+
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td.right_column,
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td.right_column {
+                    text-align: right;
+                }
+
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td.select_column,
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td.select_column {
+                    color: #888888;
+                    font-size: 1.5rem;
+                    line-height: 2.9rem;
+                    padding: 0.3rem;
+                }
+
+                    .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td.select_column.selected,
+                    .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td.select_column.selected {
+                        color: #ffffff;
+                    }
+
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td.k-command-cell,
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td.k-command-cell {
+                    line-height: 2.7rem;
+                    padding: 0.4rem 1rem;
+                }
+
+                    .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td.k-command-cell > .k-button,
+                    .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td.k-command-cell > .k-button {
+                        font-size: 1.2rem;
+                        height: 2.7rem;
+                        line-height: calc(2.7rem - 2px - 0.7rem);
+                        margin: 0 0.2rem;
+                        padding: 0.35rem 0.65rem;
+                    }
+
+                        .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td.k-command-cell > .k-button > .k-icon，
+                        .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td.k-command-cell > .k-button > .k-icon {
+                            font-size: 1.2rem;
+                            height: 2.7rem;
+                            line-height: calc(2.7rem - 1px);
+                        }
+
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td.row1,
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr > td > *.row1，
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td.row1,
+                .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr > td > *.row1 {
+                    display: table-cell;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    word-break: keep-all;
+                }
+
+            .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td {
+                text-overflow: ellipsis;
+            }
+
+                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell {
+                    padding: 0;
+                }
+
+                    .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > input[type=text] {
+                        background-color: #b4b4b4;
+                        color: #d10000;
+                        height: 2.5rem;
+                        /*margin: calc((-0.35rem - 1px)) calc(-0.65rem - 1px);*/
+                        margin: 0.5rem;
+                        padding: 0.35rem 0.65rem;
+                        width: calc(100% - 1rem);
+                    }
+
+                    .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > input[type=checkbox] {
+                        height: 1.5rem;
+                        margin: 1rem;
+                        width: calc(1.5rem - 1px);
+                    }
+
+                    .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > .k-numerictextbox {
+                        height: 2.5rem;
+                        /*margin: calc(-0.35rem - 1px) calc(-0.65rem - 1px);*/
+                        margin: 0.5rem;
+                        width: calc(100% - 1rem);
+                    }
+
+                        .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > .k-numerictextbox > .k-numeric-wrap {
+                            height: 2.5rem;
+                        }
+
+                            .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > .k-numerictextbox > .k-numeric-wrap > input {
+                                height: calc(2.5rem - 2px);
+                                margin: 0;
+                            }
+
+                            .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > .k-numerictextbox > .k-numeric-wrap > .k-select {
+                                width: 2.5rem;
+                            }
+
+                                .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > .k-numerictextbox > .k-numeric-wrap > .k-select > .k-link {
+                                    flex-grow: 1;
+                                    height: auto;
+                                }
+
+                    .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > .k-dropdown {
+                        height: 2.5rem;
+                        margin: 0.5rem;
+                        width: calc(100% - 1rem);
+                    }
+
+                        .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > .k-dropdown > .k-dropdown-wrap {
+                            height: 2.5rem;
+                        }
+
+                            .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > .k-dropdown > .k-dropdown-wrap > .k-input {
+                                height: calc(2.5rem - 2px);
+                            }
+
+                            .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-grid-edit-row > td.k-edit-cell > .k-dropdown > .k-dropdown-wrap > .k-select {
+                                height: calc(2.5rem - 2px);
+                            }
+
+            .k-grid[data-role=grid] > .k-grid-content table[role=grid] tr.k-state-selected > td.select_column,
+            .k-grid[data-role=treelist] > .k-grid-content table[role=treegrid] tr.k-state-selected > td.select_column {
+                background-color: #d10000;
+            }
+
+    /*.k-grid[data-role=grid] .k-grid-content tr td.select_column input[type=checkbox],
+                .k-grid[data-role=grid] .k-grid-content tr td.select_column input[type=radio] {
+                    height: 1.5rem;
+                    margin: calc((1.4rem - 1px) / 2) auto;
+                    width: 1.5rem;
+                }*/
+
+    /*.k-grid[data-role=grid] .k-grid-content tr td.select_column span.pmfont {
+                    font-size: 1.5rem;
+                    line-height: calc(2.9rem - 1px);
+                }*/
+
+    /*.k-grid[data-role=grid] .k-grid-content td.row3, .k-grid[data-role=grid] .k-grid-content td *.row3 {
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-all;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+            }*/
+
+    .k-grid[data-role=grid] > .k-status,
+    .k-grid[data-role=treelist] > .k-status {
+        flex-grow: 1;
+    }
+
+    .k-grid[data-role=grid] > .k-grid-pager {
+        font-size: 1.15rem;
+        height: 4rem;
+        line-height: 2.8rem;
+        padding: 0.6rem;
+    }
+
+        .k-grid[data-role=grid] > .k-grid-pager > .k-pager-nav {
+            height: 2.8rem;
+            line-height: 2.8rem;
+            padding: 0;
+        }
+
+            .k-grid[data-role=grid] > .k-grid-pager > .k-pager-nav > .k-icon {
+                font-size: 1.15rem;
+            }
+
+        .k-grid[data-role=grid] > .k-grid-pager > .k-pager-numbers {
+            height: 2.8rem;
+            line-height: 2.8rem;
+        }
+
+            .k-grid[data-role=grid] > .k-grid-pager > .k-pager-numbers > li {
+            }
+
+                .k-grid[data-role=grid] > .k-grid-pager > .k-pager-numbers > li > a,
+                .k-grid[data-role=grid] > .k-grid-pager > .k-pager-numbers > li > span {
+                    height: 2.1rem;
+                    line-height: 2.1rem;
+                    padding: 0.35rem;
+                }
+
+        .k-grid[data-role=grid] > .k-grid-pager > .k-pager-sizes {
+            height: 2.8rem;
+            line-height: 2.4rem;
+            padding: 0.2rem;
+        }
+
+            .k-grid[data-role=grid] > .k-grid-pager > .k-pager-sizes > .k-dropdown {
+                font-size: 1.15rem;
+            }
+
+                .k-grid[data-role=grid] > .k-grid-pager > .k-pager-sizes > .k-dropdown > .k-dropdown-wrap {
+                }
+
+                    .k-grid[data-role=grid] > .k-grid-pager > .k-pager-sizes > .k-dropdown > .k-dropdown-wrap > .k-input {
+                        font-size: 1.15rem;
+                        height: 3rem;
+                        line-height: 2.3rem;
+                        padding: 0.35rem 0.65rem;
+                    }
+
+                .k-grid[data-role=grid] > .k-grid-pager > .k-pager-sizes > .k-dropdown > [data-role="dropdownlist"] {
+                    font-size: 1.15rem;
+                }
+
+        .k-grid[data-role=grid] > .k-grid-pager > .k-pager-info {
+            height: 2.8rem;
+            line-height: 2.8rem;
+        }
+
+    .k-grid[data-role=grid].full_screen,
+    .k-grid[data-role=treelist].full_screen {
+        display: flex !important;
+        flex-direction: column;
+        flex-grow: 1;
+        height: calc(100% - 4rem);
+    }
+
+        .k-grid[data-role=grid].full_screen > .k-grid-content,
+        .k-grid[data-role=treelist].full_screen > .k-grid-content {
+            flex-grow: 1;
+        }
+
+/* grid editor */
+.k-popup-edit-form[data-role=window] {
+    font-size: 1.2rem;
+    padding: 0 calc(1.3rem + 20px) 0 1.3rem;
+}
+
+    .k-popup-edit-form[data-role=window] > .k-edit-form-container {
+        max-width: calc(100rem + 1.3rem * 2 + 20px);
+        width: auto;
+    }
+
+        .k-popup-edit-form[data-role=window] > .k-edit-form-container .k-tooltip-validation {
+            color: #db4040 !important;
+        }
+
+        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(50rem + 20px);
+        }
+
+            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor.column2 {
+                width: calc(100rem + 20px);
+            }
+
+            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div,
+            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div {
+                font-size: 1.2rem;
+                height: 2.5rem;
+                line-height: 2.5rem;
+                margin: 0.25rem;
+            }
+
+                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_label,
+                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_label {
+                    text-align: right;
+                    width: 14.5rem;
+                }
+
+                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor,
+                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor {
+                    margin: 0.25rem 2.5rem;
+                    width: 30rem;
+                }
+
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor.free_height,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor.free_height {
+                        height: auto;
+                    }
+
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor.area_editor,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor.area_editor {
+                        height: auto;
+                        width: 80rem;
+                    }
+
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > *,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > * {
+                        font-size: 1.2rem;
+                    }
+
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-textbox,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-textbox {
+                        height: 2.5rem;
+                        line-height: 1.8rem;
+                        padding: 0.35rem 0.65rem;
+                        width: 100%;
+                    }
+
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-textbox.k-textarea,
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-textbox.k-textarea {
+                            height: 6.1rem;
+                            overflow: auto;
+                            resize: none;
+                            width: 100%;
+                        }
+
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-numerictextbox,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-datepicker,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-dropdown,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-numerictextbox,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-datepicker,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-dropdown {
+                        height: 2.5rem;
+                        line-height: 2.5rem;
+                        width: 100%;
+                    }
+
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-numerictextbox > .k-numeric-wrap,
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-datepicker > .k-picker-wrap,
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-dropdown > .k-dropdown-wrap,
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-numerictextbox > .k-numeric-wrap,
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-datepicker > .k-picker-wrap,
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-dropdown > .k-dropdown-wrap {
+                            height: 2.5rem;
+                            line-height: 2.5rem;
+                            width: 100%;
+                        }
+
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-tooltip.k-tooltip-validation,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-tooltip.k-tooltip-validation,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-tooltip.k-tooltip-validation,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-tooltip.k-tooltip-validation,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-tooltip.k-tooltip-validation,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-tooltip.k-tooltip-validation {
+                                display: inline-flex;
+                                font-size: 1.2rem;
+                                height: 1.5rem;
+                                line-height: 1.5rem;
+                                margin: 0.5rem !important;
+                            }
+
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-tooltip.k-tooltip-validation > .k-i-warning,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-tooltip.k-tooltip-validation > .k-i-warning,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-tooltip.k-tooltip-validation > .k-i-warning,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-tooltip.k-tooltip-validation > .k-i-warning,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-tooltip.k-tooltip-validation > .k-i-warning,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-tooltip.k-tooltip-validation > .k-i-warning {
+                                    color: #db4040;
+                                    display: block;
+                                    font-size: 1.5rem;
+                                    height: 2.5rem;
+                                    line-height: 2.5rem;
+                                    position: static;
+                                    transform: none;
+                                    width: 1.5rem;
+                                }
+
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-input,
+                            /*.k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-input,*/
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-input,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-input,
+                            /*.k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-input,*/
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-input {
+                                height: calc(2.5rem - 2px);
+                                line-height: calc(1.8rem - 2px);
+                                padding: 0.35rem 0.65rem;
+                                width: calc(100% - 2.5rem) !important;
+                            }
+
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-input,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-input {
+                                flex-grow: 1;
+                                height: calc(2.5rem - 2px);
+                                line-height: calc(1.8rem - 2px);
+                                padding: 0.35rem 0.65rem;
+                                width: auto !important;
+                            }
+
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-select,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-select,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-select,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-select,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-select,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-select {
+                                height: calc(2.5rem - 2px);
+                                width: 2.5rem;
+                            }
+
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-select .k-link,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-select .k-link,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-select .k-link,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-numerictextbox > .k-numeric-wrap > .k-select .k-link,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-datepicker > .k-picker-wrap > .k-select .k-link,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-dropdown > .k-dropdown-wrap > .k-select .k-link {
+                                    flex-grow: 1;
+                                    height: auto;
+                                }
+
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect {
+                        line-height: 2.5rem;
+                        width: 100%;
+                    }
+
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect > .k-multiselect-wrap,
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect > .k-multiselect-wrap {
+                            line-height: 2.5rem;
+                            padding-right: 2rem;
+                            width: 100%;
+                        }
+
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox],
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox] {
+                            }
+
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox] > .k-button,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox] > .k-button {
+                                    height: calc(2.5rem - 6px);
+                                    padding: 0 0.35rem;
+                                }
+
+                                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox] > .k-button > span,
+                                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox] > .k-button > span {
+                                        height: calc(2.5rem - 8px);
+                                        line-height: calc(2.5rem - 8px);
+                                    }
+
+                                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox] > .k-button > span.k-select,
+                                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox] > .k-button > span.k-select {
+                                            margin-left: 0.65rem;
+                                        }
+
+                                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox] > .k-button > span.k-select > .k-icon,
+                                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-reset[role=listbox] > .k-button > span.k-select > .k-icon {
+                                                font-size: 1.5rem;
+                                                height: 1.5rem;
+                                                width: 1.5rem;
+                                            }
+
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-input,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-input {
+                                height: calc(2.5rem - 2px);
+                                line-height: calc(1.8rem - 2px);
+                                padding: 0.35rem 0.65rem;
+                            }
+
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-icon,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-icon {
+                                font-size: 1.5rem;
+                                height: calc(2.5rem - 2px);
+                                line-height: calc(1.5rem - 2px);
+                                margin: 0;
+                                top: 0;
+                                right: 0;
+                                width: calc(2.8rem - 2px);
+                                padding: 0.5rem 0.65rem;
+                            }
+
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-icon:before,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-multiselect > .k-multiselect-wrap > .k-icon:before {
+                                    height: calc(1.5rem - 2px);
+                                    width: calc(1.5rem - 2px);
+                                }
+
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-switch,
+                    .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-switch {
+                        height: calc(2.5rem - 2px);
+                        width: calc(2.5rem - 4px + 4rem);
+                    }
+
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-switch > .k-switch-container,
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-switch > .k-switch-container {
+                            height: calc(2.5rem - 2px);
+                            padding: 0;
+                            width: calc(2.5rem - 4px + 4rem);
+                        }
+
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle,
+                            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle {
+                                height: calc(2.5rem - 4px);
+                                margin: 0;
+                                width: calc(2.5rem - 4px);
+                            }
+
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle > .k-switch-label-on,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle > .k-switch-label-off,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle > .k-switch-label-on,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle > .k-switch-label-off {
+                                    height: calc(2.5rem - 2px);
+                                    line-height: calc(1.8rem - 2px);
+                                    padding: 0.35rem 0.65rem;
+                                    width: 4rem;
+                                }
+
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle > .k-switch-label-on,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle > .k-switch-label-on {
+                                    left: -4rem;
+                                }
+
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle > .k-switch-label-off,
+                                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor > .k-switch > .k-switch-container > .k-switch-handle > .k-switch-label-off {
+                                    left: calc(2.5rem - 4px);
+                                }
+
+            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor {
+                margin: 0.25rem -2px;
+                padding: calc(1rem - 2px) 0;
+                width: calc(100rem + 4px);
+            }
+
+                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > legend {
+                    margin-left: 1.5rem;
+                }
+
+                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div {
+                    display: flex;
+                    height: auto;
+                    margin: 0;
+                }
+
+        /*.k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_label {
+                            text-align: right;
+                            width: 14.5rem;
+                        }
+
+                        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .custom_editor > fieldset.editor_editor > div > div.editor_editor {
+                            margin: 0.25rem 2.5rem;
+                            width: 30rem;
+                        }*/
+
+        .k-popup-edit-form[data-role=window] > .k-edit-form-container > .k-edit-buttons {
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0.25rem 0 0 0;
+            padding: 1rem;
+        }
+
+            .k-popup-edit-form[data-role=window] > .k-edit-form-container > .k-edit-buttons > .k-button {
+                font-size: 1.2rem;
+                height: 2.5rem;
+                line-height: 2rem;
+                padding: 0.25rem;
+                width: 8rem;
+            }
+
+                .k-popup-edit-form[data-role=window] > .k-edit-form-container > .k-edit-buttons > .k-button > .k-icon {
+                    font-size: 1.2rem;
+                }
+
+/* dropdownlist */
+.k-dropdown[role=listbox] {
+    font-size: 1.2rem;
+}
+
+    .k-dropdown[role=listbox] > .k-dropdown-wrap {
+        height: calc(3rem + 2px);
+    }
+
+        .k-dropdown[role=listbox] > .k-dropdown-wrap > .k-input {
+            font-size: 1.2rem;
+            height: 3rem;
+            line-height: 2.3rem;
+            padding: 0.35rem 0.65rem;
+        }
+
+        .k-dropdown[role=listbox] > .k-dropdown-wrap > .k-select {
+            height: 3rem;
+        }
+
+            .k-dropdown[role=listbox] > .k-dropdown-wrap > .k-select > .k-icon {
+                font-size: 1.2rem;
+                height: 1.5rem;
+                line-height: 1.5rem;
+                width: 1.5rem;
+            }
+
+            .k-dropdown[role=listbox] > .k-dropdown-wrap > .k-select > .k-i-loading {
+                font-size: 1.2rem;
+                height: 1.5rem;
+                left: auto;
+                line-height: 1.5rem;
+                margin: 0;
+                position: relative;
+                width: 1.5rem;
+                right: 0;
+                top: 0;
+            }
+
+.k-animation-container {
+}
+
+    .k-animation-container > .k-list-container {
+        height: auto !important;
+    }
+
+        .k-animation-container > .k-list-container > .k-list-optionlabel {
+            font-size: 1.2rem;
+            height: 2.7rem;
+            line-height: 2rem;
+            padding: 0.35rem 0.65rem;
+        }
+
+        .k-animation-container > .k-list-container > .k-list-scroller {
+        }
+
+            .k-animation-container > .k-list-container > .k-list-scroller > ul.k-list {
+            }
+
+                .k-animation-container > .k-list-container > .k-list-scroller > ul.k-list > li[role=option] {
+                    padding: 0.35rem 0.65rem;
+                }
+
+/*multiselect*/
+.k-multiselect {
+    font-size: 1.2rem;
+}
+
+/* window */
+.k-window {
+    font-size: 1.2rem;
+    padding-top: 3rem;
+}
+
+    .k-window > .k-header {
+        height: 3rem;
+        line-height: 2rem;
+        padding: 0.5rem;
+    }
+
+        .k-window > .k-header > .k-window-title {
+            font-size: 1.5rem;
+            height: 2rem;
+            line-height: 2rem;
+        }
+
+        .k-window > .k-header > .k-window-actions {
+        }
+
+            .k-window > .k-header > .k-window-actions > a[role=button] {
+                height: 2rem;
+                padding: 0.25rem;
+                width: 2rem;
+            }
+
+                .k-window > .k-header > .k-window-actions > a[role=button] > .k-icon {
+                    font-size: 1.2rem;
+                    height: calc(1.5rem - 2px);
+                    line-height: calc(1.5rem - 2px);
+                }
+
+    .k-window > .k-window-content[data-role=window] {
+        padding: 1rem /*calc(1.3rem + 20px) 1rem 1rem*/;
+    }
+
+/* gantt */
+.k-gantt[data-role=gantt] {
+    font-size: 1.2rem;
+}
+
+    .k-gantt[data-role=gantt] > .k-gantt-toolbar {
+        height: 4rem;
+        padding: 0.65rem;
+    }
+
+        .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-views {
+            height: 2.7rem;
+        }
+
+            .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-views > li {
+                height: 2.7rem;
+            }
+
+                .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-views > li > a {
+                    font-size: 1.2rem;
+                    height: calc(2.7rem - 2px);
+                    line-height: calc(2rem - 2px);
+                    padding: 0.35rem 0.65rem;
+                }
+
+        .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions {
+            align-items: center;
+            display: flex;
+            height: 2.7rem;
+            justify-content: flex-start
+        }
+
+            .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions > .k-button {
+                background: none;
+                border-color: transparent;
+                font-size: 1.2rem;
+                height: 2.7rem;
+                line-height: calc(2rem - 2px);
+                padding: 0.35rem 0.65rem;
+            }
+
+                .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions > .k-button::after {
+                    border: 2px solid currentColor;
+                    bottom: -1px;
+                    content: "";
+                    display: block;
+                    left: -1px;
+                    opacity: 0;
+                    pointer-events: none;
+                    position: absolute;
+                    right: -1px;
+                    top: -1px;
+                    z-index: -1;
+                }
+
+                .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions > .k-button::before {
+                    background-color: currentColor;
+                    bottom: -1px;
+                    content: "";
+                    display: block;
+                    left: -1px;
+                    opacity: 0;
+                    pointer-events: none;
+                    position: absolute;
+                    right: -1px;
+                    top: -1px;
+                    transition: opacity .2s ease-in-out;
+                    z-index: -1;
+                    -webkit-transition: opacity .2s ease-in-out;
+                }
+
+                .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions > .k-button:active::after {
+                    opacity: .13;
+                    z-index: 1;
+                }
+
+                .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions > .k-button:active::before {
+                    opacity: .07;
+                    z-index: 1;
+                }
+
+                .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions > .k-button:hover::before {
+                    opacity: .07;
+                    z-index: 1;
+                }
+
+                .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions > .k-button > span {
+                    font-size: 1.2rem;
+                    height: calc(2rem - 2px);
+                    line-height: calc(2rem - 2px);
+                }
+
+                .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions > .k-button > .k-icon {
+                    margin: 0 0.35rem 0 0;
+                }
+
+                .k-gantt[data-role=gantt] > .k-gantt-toolbar > .k-gantt-actions > .k-button > .pmfont {
+                    font-size: 1.2rem;
+                }
+
+    .k-gantt[data-role=gantt] > .k-gantt-treelist {
+    }
+
+        .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] {
+            font-size: 1.2rem;
+        }
+
+            .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-header {
+                height: calc(6rem + 1px);
+            }
+
+                .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-header > .k-grid-header-wrap {
+                    height: 6rem;
+                }
+
+                    .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-header > .k-grid-header-wrap > .k-resize-handle {
+                        background-color: transparent;
+                    }
+
+                    .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-header > .k-grid-header-wrap > table[role=grid] tr {
+                        height: 6rem;
+                    }
+
+                        .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-header > .k-grid-header-wrap > table[role=grid] tr > th {
+                            font-size: 1.2rem;
+                            height: calc(6rem - 1px);
+                            line-height: calc(2rem - 1px);
+                            padding: 2rem 0.5rem;
+                            text-align: center;
+                        }
+
+                            .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-header > .k-grid-header-wrap > table[role=grid] tr > th > a {
+                                margin: 0;
+                                padding: 0;
+                            }
+
+            .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-content {
+            }
+
+                .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-content table[role=treegrid] tr {
+                    height: 3.5rem;
+                }
+
+                    .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-content table[role=treegrid] tr > td {
+                        font-size: 1.2rem;
+                        height: 3.5rem;
+                        line-height: 1.7rem;
+                        padding: 0.9rem;
+                        text-align: center;
+                    }
+
+                        .k-gantt[data-role=gantt] > .k-gantt-treelist > .k-treelist[data-role=ganttlist] > .k-grid-content table[role=treegrid] tr > td > span {
+                            font-size: 1.2rem;
+                        }
+
+    .k-gantt[data-role=gantt] > .k-gantt-timeline {
+    }
+
+        .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] {
+            font-size: 1.2rem;
+        }
+
+            .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-header {
+                height: calc(6rem + 1px);
+            }
+
+                .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-header > .k-grid-header-wrap {
+                    height: 6rem;
+                }
+
+                    .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-header > .k-grid-header-wrap > table tr {
+                        height: 3rem;
+                    }
+
+                        .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-header > .k-grid-header-wrap > table tr > th {
+                            font-size: 1.2rem;
+                            height: calc(3rem - 1px);
+                            line-height: calc(2rem - 1px);
+                            padding: 0.5rem;
+                            text-align: center;
+                        }
+
+            .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content {
+            }
+
+                .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-rows,
+                .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks {
+                }
+
+                    .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-rows tr,
+                    .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks tr {
+                        height: 3.5rem;
+                    }
+
+                        .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-rows tr > td {
+                            font-size: 1.2rem;
+                            height: 3.5rem;
+                            line-height: 1.7rem;
+                            padding: 0.9rem;
+                            text-align: center;
+                        }
+
+                        .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks tr > td {
+                            font-size: 1.2rem;
+                            height: 3.5rem;
+                            padding: 0;
+                        }
+
+                            .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks tr > td > .k-task-wrap {
+                                height: 3.5rem;
+                                padding: 0.5rem 1.8rem;
+                            }
+
+                                .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks tr > td > .k-task-wrap > .k-task {
+                                    border-style: solid;
+                                    border-width: 0.2rem;
+                                    height: 2.5rem;
+                                }
+
+                                    .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks tr > td > .k-task-wrap > .k-task > .k-task-complete,
+                                    .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks tr > td > .k-task-wrap > .k-task > .k-task-content {
+                                        height: 2.5rem;
+                                        margin: -0.2rem;
+                                    }
+
+                                        .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks tr > td > .k-task-wrap > .k-task > .k-task-content > .k-task-template {
+                                            height: 2.5rem;
+                                            line-height: 2.5rem;
+                                            padding: 0.35rem;
+                                        }
+
+                                        .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks tr > td > .k-task-wrap > .k-task > .k-task-content > .k-task-actions {
+                                            height: 2.5rem;
+                                            line-height: 2.5rem;
+                                            padding: 0.2rem;
+                                        }
+
+                                            .k-gantt[data-role=gantt] > .k-gantt-timeline > .k-timeline[data-role=gantttimeline] > .k-grid-content > .k-gantt-tables > table.k-gantt-tasks tr > td > .k-task-wrap > .k-task > .k-task-content > .k-task-actions .k-icon {
+                                                font-size: 1.5rem;
+                                            }
+
+    .k-gantt[data-role=gantt].full_screen {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+    }
+
+/* treeview */
+.k-treeview[data-role=treeview] {
+    font-size: 1.2rem;
+}
+
+    .k-treeview[data-role=treeview] .k-group {
+    }
+
+        .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] {
+            padding-left: 1.5rem;
+        }
+
+            .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-top,
+            .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-mid {
+            }
+
+                .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-top > .k-icon,
+                .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-mid > .k-icon,
+                .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-bot > .k-icon {
+                    font-size: 1.2rem;
+                    height: 2.5rem;
+                    line-height: 1.8rem;
+                    margin-left: -1.5rem;
+                    padding: 0.35rem 0;
+                    text-align: center;
+                    width: 1.5rem;
+                }
+
+                .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-top > .k-in,
+                .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-mid > .k-in,
+                .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-bot > .k-in {
+                    height: 2.5rem;
+                    line-height: 1.8rem;
+                    padding: 0.35rem 0.65rem;
+                }
+
+                    .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-top > .k-in .pmfont,
+                    .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-mid > .k-in .pmfont,
+                    .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-bot > .k-in .pmfont {
+                        height: 2.5rem;
+                        line-height: 2.5rem;
+                    }
+
+                        .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-top > .k-in .pmfont.delete,
+                        .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-mid > .k-in .pmfont.delete,
+                        .k-treeview[data-role=treeview] .k-group .k-item[role=treeitem] > .k-bot > .k-in .pmfont.delete {
+                            cursor: pointer;
+                        }
+
+    .k-treeview[data-role=treeview].full_screen {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        height: calc(100% - 4rem);
+    }
+
+        .k-treeview[data-role=treeview].full_screen > .k-treeview-lines {
+            flex-grow: 1;
+        }
+
+/* calendar */
+
+
+/* daterangepicker */
