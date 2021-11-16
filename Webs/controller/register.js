@@ -274,7 +274,7 @@
     function initDataSource() {
         _dataSource = new kendo.data.DataSource({
             schema: {
-                data: function (response) {
+                data: function (response) {  
                     if (response !== null) {  
                         if (response.errcode === 0) {
                             return parseVisitorRecord(response.DataJSON);
